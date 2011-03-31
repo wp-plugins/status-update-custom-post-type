@@ -3,7 +3,7 @@
 Plugin Name: Status Update Custom Post Type
 Plugin URI: http://blog.andrewshell.org/status-type
 Description: Adds a Status Update custom post type
-Version: 0.1.0
+Version: 0.1.1
 Author: Andrew Shell
 Author URI: http://blog.andrewshell.org
 License: GPL2
