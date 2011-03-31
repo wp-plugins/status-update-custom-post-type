@@ -18,16 +18,16 @@ any html in it and by default the plugin will attempt to create a plain text
 version of your status update.
 
 For example, if your body contains the html:
-    <p>Wow I really love using <a href="http://shll.me/statustype">Status Update Custom Post Type</a>!</p>
+  `<p>Wow I really love using <a href="http://shll.me/statustype">Status Update Custom Post Type</a>!</p>`
     
 It will automatically generate an excerpt of:
-    Wow I really love using Status Update Custom Post Type - http://shll.me/statustype
+  `Wow I really love using Status Update Custom Post Type - http://shll.me/statustype`
     
 It will also try to pull the alt or title attributes out of images so:
-    <img src="http://example.com/image.jpg" alt="Example Image" />
+  `<img src="http://example.com/image.jpg" alt="Example Image" />`
     
 Should turn into:
-    Example Image - http://example.com/image.jpg
+  `Example Image - http://example.com/image.jpg`
     
 By default your status updates do not have title, do not generate titles and
 I remove the title tag from the RSS feeds.  This may mean your feeds won't
