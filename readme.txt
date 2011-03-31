@@ -1,5 +1,6 @@
 === Plugin Name ===
 Contributors: shellab
+Donate link: http://blog.andrewshell.org/
 Tags: admin, custom post types, post type
 Requires at least: 3.0
 Tested up to: 3.1
