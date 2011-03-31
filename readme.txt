@@ -49,11 +49,27 @@ a lot of documentation about this.  So for now it's trial and error.
 2. Into this new directory upload the plugin files (status_type.php, etc.)
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 
+== Frequently Asked Questions ==
+
+= How do I ask a question? =
+
+Send the author, [Andrew Shell](http://blog.andrewshell.org/contact-andrew) a 
+message or post a comment [here](http://blog.andrewshell.org/status-type).
+
 == Screenshots ==
 
 1. List of Status Updates 
 
 2. Status Update edit page
+
+== Changelog ==
+
+= 0.1.0 =
+Initial release
+
+== Upgrade Notice ==
+
+Nothing at this time.
 
 == Feedback? ==
 
