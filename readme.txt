@@ -3,7 +3,7 @@ Contributors: shellab
 Donate link: http://blog.andrewshell.org/
 Tags: admin, custom post types, post type
 Requires at least: 3.0
-Tested up to: 3.1
+Tested up to: 3.2.1
 Stable tag: 0.1.1
 
 Adds a Status Update Custom Post Type
@@ -34,10 +34,6 @@ I remove the title tag from the RSS feeds.  This may mean your feeds won't
 look correct in Google Reader but this is intentional.  For more information
 consult the following post: 
 http://scripting.com/stories/2011/03/15/twitterPostsDontHaveTitles.html#p5574
-
-If it's really important for you that your status updates have titles you
-can go under the Settings > Writing page and check "Enable Title" although I
-personally recommend against it.
 
 This plugin also makes sure your status updates show up on the homepage and in
 your main RSS feed.  I don't know if the way I'm doing it will cause problems

@@ -26,7 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 if ( is_admin() ){ // admin actions
-  add_action( 'admin_init', 'status_type_admin_init' );
+  //add_action( 'admin_init', 'status_type_admin_init' );
 }
 add_action( 'init', 'status_type_init' );
 
@@ -65,15 +65,15 @@ function status_type_init()
     'supports' => array( 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'custom-fields' ),
   );
 
-  if (get_option('status_type_enabletitle')) {
-    array_unshift($args['supports'], 'title');
-  }
+  // if (get_option('status_type_enabletitle')) {
+  //   array_unshift($args['supports'], 'title');
+  // }
 
   register_post_type( 'status', $args );
 
   add_filter( 'manage_edit-status_columns', 'status_type_add_columns' );
   add_filter( 'request', 'status_type_request' );
-  add_filter( 'the_title', 'status_type_the_title' );
+  // add_filter( 'the_title', 'status_type_the_title' );
   add_filter( 'wp_insert_post_data', 'status_type_wp_insert_post_data', 99, 2 );
 
   remove_action( 'do_feed_rss2', 'do_feed_rss2', 10, 1 );
@@ -135,13 +135,13 @@ function status_type_manage_columns($column_name) {
  */
 function status_type_wp_insert_post_data( $data , $postarr ) {
   if ( 'status' == $data['post_type'] ) {
-    if ( get_option('status_type_enabletitle') ) {
-      if ( empty( $data['post_title'] ) || 0 == strcmp( 'Auto Draft', $data['post_title'] ) ) {
-        $data['post_title'] = status_type_title_from_content( $data['post_content'] );
-      }
-    } elseif ( !empty( $data['post_title'] ) ) {
+    // if ( get_option('status_type_enabletitle') ) {
+    //   if ( empty( $data['post_title'] ) || 0 == strcmp( 'Auto Draft', $data['post_title'] ) ) {
+    //     $data['post_title'] = status_type_title_from_content( $data['post_content'] );
+    //   }
+    // } elseif ( !empty( $data['post_title'] ) ) {
       $data['post_title'] = '';
-    }
+    // }
     if ( empty( $data['post_excerpt'] ) ) {
       $data['post_excerpt'] = status_type_excerpt_from_content( $data['post_content'] );
     }
