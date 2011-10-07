@@ -4,7 +4,7 @@ Donate link: http://blog.andrewshell.org/
 Tags: admin, custom post types, post type
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 
 Adds a Status Update Custom Post Type
 
